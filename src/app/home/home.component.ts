@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild} from '@angular/core';
 import { IconService } from '../services/icon.service';
 
 
@@ -12,9 +12,20 @@ import { IconService } from '../services/icon.service';
 })
 export class HomeComponent {
   constructor(public icon: IconService) {}
-  images: string[] = ['ruta/al/imagen1.jpg', 'ruta/al/imagen2.jpg', 'ruta/al/imagen3.jpg'];
-  hoverStates: boolean[] = [false, false, false]; // Para controlar el estado de hover de cada imagen
 
+  @ViewChild('video1') video1!: ElementRef<HTMLVideoElement>;
+
+  playVideo(video:ElementRef<HTMLVideoElement>){
+
+    video.nativeElement.play();
+  }
+
+  
+
+  pauseVideo(video:ElementRef<HTMLVideoElement>){
+
+    video.nativeElement.pause();
+  }
 
 
 }

@@ -89,31 +89,25 @@
     color: #fff;
   }
 
-  .video-section {
+  
+  .card-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    padding: 20px;
   }
   
-  .video-container {
-    display: flex;
+  .card {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 10px; 
+    border-radius: 10px;
+    background-color: aliceblue;
+    transition: max-width 0.5s ease; 
+    height: 300px;
+    min-width: none;
   }
   
-  .video-item {
-    position: relative;
-    overflow: hidden;
-    width: 300px; /* Ancho inicial de cada video */
-    transition: width 0.5s ease;
+  .card:hover {
+    max-width: 1000px!important;
   }
-  
-  .video-item:hover {
-    width: 400px; /* Ancho expandido al hacer hover */
-  }
-  
-  .video {
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Estilos adicionales según necesidades */
   

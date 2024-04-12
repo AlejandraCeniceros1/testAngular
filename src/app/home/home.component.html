@@ -24,26 +24,20 @@
 
     </div>
 </div>
-<section class="video-section">
-    <div class="video-container">
-      <!-- Primer video -->
-      <div class="video-item">
-        <video class="video" loop>
-          <source src="video1.mp4" type="video/mp4">
+<section class="card-container">
+      <div class="card" (mouseenter)="playVideo(video1)" (mouseleave)="pauseVideo(video1)"> 
+        <video #video1 loop muted>
+          <source src-"assets/videos/video1.mp4" type="video/mp4">
         </video>
+        
       </div>
-      <!-- Segundo video -->
-      <div class="video-item">
-        <video class="video" loop>
-          <source src="video2.mp4" type="video/mp4">
-        </video>
+      <div class="card">
+        <h5>Titulo 2</h5>
+        <p>un texto aqui</p>
       </div>
-      <!-- Tercer video -->
-      <div class="video-item">
-        <video class="video" loop>
-          <source src="video3.mp4" type="video/mp4">
-        </video>
+      <div class="card">
+        <h5>Titulo 2</h5>
+        <p>un texto aqui</p>
       </div>
-    </div>
   </section>
   
