@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "dashboard-73491"
+  },
+  "targets": {
+    "dashboard-73491": {
+      "hosting": {
+        "dashboard": [
+          "dashboard-73491"
+        ]
+      }
+    }
+  }
+}

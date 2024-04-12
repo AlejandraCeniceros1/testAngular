@@ -1,0 +1,119 @@
+.banner {
+    background-image: linear-gradient(to right, #192960, #29449F);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 90px 30px;
+  }
+  
+  .banner-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Nexa Text', sans-serif;    
+    margin-bottom: 5px;
+  }
+  
+  .banner p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-weight: 100;
+    margin-bottom: 35px;
+  }
+  
+  .btn {
+    display: inline-block; 
+    margin-right: 1rem; 
+  }
+  
+  .btn-primary {
+    display: inline-block; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px; 
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50; 
+  }
+  
+
+  
+  
+  .banner-image {
+    flex: 1;
+    text-align: right;
+    padding: 80px 30px;
+  }
+  
+  .banner-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .bannerempresas {
+    background-color: #030e15;
+    color: #fff;
+    text-align: center;
+    padding: 55px 10px; 
+  }
+  
+  .logos-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Asegura que el contenedor tenga altura */
+  }
+  
+  .logos-container img {
+    max-height: 24px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 10px;
+  }
+  
+  
+.blue-text {
+    --tw-text-opacity: 1;
+    color: rgb(147 197 253 / var(--tw-text-opacity));  }
+
+.btn.blue-text {
+    text-decoration: none; 
+  }
+      
+  
+  .white-text {
+    color: #fff;
+  }
+
+  .video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .video-container {
+    display: flex;
+  }
+  
+  .video-item {
+    position: relative;
+    overflow: hidden;
+    width: 300px; /* Ancho inicial de cada video */
+    transition: width 0.5s ease;
+  }
+  
+  .video-item:hover {
+    width: 400px; /* Ancho expandido al hacer hover */
+  }
+  
+  .video {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos adicionales según necesidades */
+  
