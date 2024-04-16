@@ -1,113 +1,177 @@
 .banner {
-    background-image: linear-gradient(to right, #192960, #29449F);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    padding: 90px 30px;
-  }
-  
-  .banner-content {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .banner h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: 'Nexa Text', sans-serif;    
-    margin-bottom: 5px;
-  }
-  
-  .banner p {
-    font-size: 1rem;
-    margin-bottom: 30px;
-    font-weight: 100;
-    margin-bottom: 35px;
-  }
-  
-  .btn {
-    display: inline-block; 
-    margin-right: 1rem; 
-  }
-  
-  .btn-primary {
-    display: inline-block; 
-    padding: 10px 20px;
-    border: none;
-    border-radius: 2px; 
-    text-decoration: none;
-    color: #fff;
-    background-color: #4CAF50; 
-  }
-  
+  background-image: linear-gradient(to right, #192960, #29449F);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 90px 30px;
+  margin-bottom: 20px;
+}
 
-  
-  
-  .banner-image {
-    flex: 1;
-    text-align: right;
-    padding: 80px 30px;
-  }
-  
-  .banner-image img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .bannerempresas {
-    background-color: #030e15;
-    color: #fff;
-    text-align: center;
-    padding: 55px 10px; 
-  }
-  
-  .logos-container {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100%; /* Asegura que el contenedor tenga altura */
-  }
-  
-  .logos-container img {
-    max-height: 24px;
-    width: auto;
-    object-fit: contain;
-    margin: 0 10px;
-  }
-  
-  
+.banner-content {
+  flex: 1;
+  text-align: left;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Nexa Text', sans-serif;    
+  margin-bottom: 5px;
+}
+
+.banner p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+
+.btn {
+  display: inline-block; 
+  margin-right: 1rem; 
+}
+
+.btn-primary {
+  display: inline-block; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px; 
+  text-decoration: none;
+  color: #fff;
+  background-color: #4CAF50; 
+}
+
+.banner-image {
+  flex: 1;
+  text-align: right;
+  padding: 80px 30px;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bannerempresas {
+  background-color: #030e15;
+  color: #fff;
+  text-align: center;
+  padding: 55px 10px;
+  margin-bottom: 20px; /* Añadimos margen inferior */
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100%;
+}
+
+.logos-container img {
+  max-height: 24px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 10px;
+}
+
 .blue-text {
-    --tw-text-opacity: 1;
-    color: rgb(147 197 253 / var(--tw-text-opacity));  }
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity));
+}
 
 .btn.blue-text {
-    text-decoration: none; 
-  }
-      
-  
-  .white-text {
-    color: #fff;
-  }
+  text-decoration: none; 
+}
 
-  
-  .card-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .card {
-    flex: 1;
-    max-width: 400px;
-    margin: 0 10px; 
-    border-radius: 10px;
-    background-color: aliceblue;
-    transition: max-width 0.5s ease; 
-    height: 300px;
-    min-width: none;
-  }
-  
-  .card:hover {
-    max-width: 1000px!important;
-  }
-  
+.white-text {
+  color: #fff;
+}
+
+.examples-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  height: 100%; 
+  background-image: linear-gradient(to bottom, #ffffff,#ececec);
+  margin-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; 
+  padding: 20px;
+}
+
+.examples-container h1 {
+  margin-top: 50px;
+  font-size: 2.8rem;
+  font-weight: 550;
+  font-family: 'Nexa Text', sans-serif;    
+  margin-bottom: 1px;
+  color: #323c5a;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  flex-grow: 1; 
+  flex-basis: 300px; 
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  transition: flex-basis 0.5s ease;
+  height: 300px;
+  overflow: hidden;
+}
+
+.card:hover {
+  flex-basis: 1000px;
+}
+
+.card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.title-column {
+  text-align: center; 
+}
+
+.custom-cards {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-card {
+  width: 200px;
+  margin: 10px; 
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.custom-card img {
+  width: 15vw;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 5px; 
+}
+
+.text-container {
+  padding: 1px;
+}
+
+.text-container h5 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.text-container p {
+  font-size: 1rem;
+  color: #666;
+}

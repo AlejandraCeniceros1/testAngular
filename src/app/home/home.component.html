@@ -25,19 +25,64 @@
     </div>
 </div>
 <section class="card-container">
-      <div class="card" (mouseenter)="playVideo(video1)" (mouseleave)="pauseVideo(video1)"> 
-        <video #video1 loop muted>
-          <source src-"assets/videos/video1.mp4" type="video/mp4">
-        </video>
-        
+  <div class="card" (mouseenter)="playVideo(video1)" (mouseleave)="pauseVideo(video1)"> 
+    <video #video1 loop muted>
+      <source src="assets/videos/video1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="card" (mouseenter)="playVideo(video2)" (mouseleave)="pauseVideo(video2)">
+    <video #video2 loop muted>
+      <source src="assets/videos/video2.mp4" type="video/mp4">
+    </video>
+    <h5>Titulo 2</h5>
+    <p>un texto aqui</p>
+  </div>
+  <div class="card"  (mouseenter)="playVideo(video3)" (mouseleave)="pauseVideo(video3)">
+    <video #video3 loop muted>
+      <source src="assets/videos/video3.mp4" type="video/mp4">
+    </video>
+    <h5>Titulo 3</h5>
+    <p>un texto aqui</p>
+  </div>
+</section>
+<section class="examples-container">
+  <div class="title-column">
+    <h1> Una solución para cada reto <br> en tu rutina de mantenimiento.</h1>
+  </div>
+
+  <div class="custom-cards">
+    <div class="custom-card">
+      <img src="assets/img/trac1.png" alt="Imagen 1">
+
+      <div class="text-container">
+        <h5>Smart Trac</h5>
+        <p>Sensor para monitoreo de vibración y temperatura</p>
       </div>
-      <div class="card">
-        <h5>Titulo 2</h5>
-        <p>un texto aqui</p>
+    </div>
+
+    <div class="custom-card">
+      <img src="assets/img/trac2.png" alt="Imagen 1">
+
+      <div class="text-container">
+        <h5>Smart Trac</h5>
+        <p>Sensor para monitoreo de vibración y temperatura</p>
       </div>
-      <div class="card">
-        <h5>Titulo 2</h5>
-        <p>un texto aqui</p>
+    </div>
+    <div class="custom-card">
+      <img src="assets/img/trac3.png" alt="Imagen 1">
+
+      <div class="text-container">
+        <h5>Smart Trac</h5>
+        <p>Sensor para monitoreo de vibración y temperatura</p>
       </div>
-  </section>
-  
+    </div>
+    <div class="custom-card">
+      <img src="assets/img/trac4.png" alt="Imagen 1">
+
+      <div class="text-container">
+        <h5>Smart Trac</h5>
+        <p>Sensor para monitoreo de vibración y temperatura</p>
+      </div>
+    </div>
+  </div>
+</section>

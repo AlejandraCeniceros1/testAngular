@@ -14,18 +14,20 @@ export class HomeComponent {
   constructor(public icon: IconService) {}
 
   @ViewChild('video1') video1!: ElementRef<HTMLVideoElement>;
+  @ViewChild('video2') video2!: ElementRef<HTMLVideoElement>;
+  @ViewChild('video3') video3!: ElementRef<HTMLVideoElement>;
 
-  playVideo(video:ElementRef<HTMLVideoElement>){
-
-    video.nativeElement.play();
+  ngAfterViewInit() {
+    this.video1.nativeElement.muted = true;
+    this.video2.nativeElement.muted = true;
   }
 
+  playVideo(video: HTMLVideoElement) {
+    video.play();
+  }
   
-
-  pauseVideo(video:ElementRef<HTMLVideoElement>){
-
-    video.nativeElement.pause();
+  pauseVideo(video: HTMLVideoElement) {
+    video.pause();
   }
-
-
+  
 }
