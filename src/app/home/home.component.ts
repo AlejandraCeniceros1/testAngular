@@ -11,6 +11,10 @@ import { IconService } from '../services/icon.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
+  activeTab: string = 'tab1';
+  tabWidth: string = '20%'; 
+  linePosition: string = '15%'; 
+
   constructor(public icon: IconService) {}
 
   @ViewChild('video1') video1!: ElementRef<HTMLVideoElement>;
@@ -29,5 +33,33 @@ export class HomeComponent {
   pauseVideo(video: HTMLVideoElement) {
     video.pause();
   }
-  
+  setActiveTab(tab: string): void {
+    this.activeTab = tab;
+    this.calculateLinePosition();
+  }
+
+  isTabActive(tab: string): boolean {
+    return this.activeTab === tab;
+  }
+
+  calculateLinePosition(): void {
+    const tabWidthPercentage = 100 / 4;
+    switch (this.activeTab) {
+      case 'tab1':
+        this.linePosition = '15%';
+        break;
+      case 'tab2':
+        this.linePosition = 6.4 * tabWidthPercentage + '%';
+        break;
+      case 'tab3':
+        this.linePosition = 11.25 * tabWidthPercentage + '%';
+        break;
+      case 'tab4':
+        this.linePosition = 15.5 * tabWidthPercentage + '3%';
+        break;
+      default:
+        this.linePosition = '0%';
+        break;
+    }
+  }
 }

@@ -10,7 +10,7 @@
       <a href="#" class="btn blue-text">ROI de hasta 18x </a>
     </div>
     <div class="banner-image">
-      <img src="ruta/a/la/imagen.jpg" alt="Imagen">
+      aqui va la cosa bien rara de tractian
     </div>
   </div>
 <div class="bannerempresas">
@@ -85,4 +85,283 @@
       </div>
     </div>
   </div>
+</section>
+<section class="info-section">
+  <div class="info-container">
+    <p class="info-title">
+      43%¹ menos Downtime
+    </p>
+    <p> Elimine las fallas inesperadas y aumente las horas productivas</p>
+    <div class="line-right"></div>
+  </div>
+  <div class="info-container">
+    <p class="info-title">
+      88%² de Precisión en los Diagnósticos
+    </p>
+    <p> Máxima asertividad para complementar el análisis humano</p>
+    <div class="line-right"></div>
+  </div>
+  <div class="info-container">
+    <p class="info-title">
+      $6,000³ Ahorrados por máquina
+    </p>
+    <p> Prolongue la vida útil de los activos y reduzca los costos preventivos</p>
+    <div class="line-right"></div>
+  </div>
+  <div class="info-container">
+    <p class="info-title">
+      Payback en < 3 meses
+    </p>
+    <p> Rentabilidad inmediata de su presupuesto de mantenimiento</p>
+  </div>
+</section>
+<section class="info-section2">
+  <p class="ft14 paragraph " style="color: rgb(82, 82, 82); font-weight: 100;"> ¹, ², ³. De acuerdo con los entrevistados en un estudio comisionado por Atlas Intel en Julio de 2023.</p>
+  <div class="down-line"> </div>
+  
+</section>
+<section class="section-tabs" >
+  <div class="tab-container " style="padding-left: 50px;padding-right: 50px; padding-top: 70px;">
+    <button class="tab-button ft18" (click)="setActiveTab('tab1')" [class.active]="isTabActive('tab1')">Mantenimiento Predictivo</button>
+    <button class="tab-button ft18" (click)="setActiveTab('tab2')" [class.active]="isTabActive('tab2')">Eficiencia Energética</button>
+    <button class="tab-button ft18" (click)="setActiveTab('tab3')" [class.active]="isTabActive('tab3')">Movilidad</button>
+    <button class="tab-button ft18" (click)="setActiveTab('tab4')" [class.active]="isTabActive('tab4')">ROI de hasta 18x</button>
+    <div class="tab-line" [style.transform]="'translateX(' + linePosition + ')'" [style.width]="tabWidth"></div>
+  </div>
+  
+  <div class="tab-content" [class.active]="activeTab === 'tab1'">
+    <div class="row">
+      <div class="column-left">
+        <!-- Contenido de la columna izquierda -->
+        <div class="quote-container">
+          <div class="quote">
+            <img class="img-quote"  [src]="icon.Comillas" style="height: 54px; color: blue"  alt="">
+            <p class="ft14 quote-info">Sin un monitoreo continuo, estamos en riesgo de perder información crucial sobre nuestra operación. Afortunadamente, TRACTIAN registra estos datos para nosotros, por lo que ahora tenemos una herramienta en la que podemos confiar.</p>
+            <div class="quote-end">
+              <p class="ft15 quote-author" >Gustavo Nazar</p>
+            <p class=" ft15 quote-position">Analista de Mantenimiento</p>
+            <p class=" quote-company">Yara International</p>
+
+            </div>
+            
+          </div>
+        </div>
+        <img [src]="icon.Sujeto1" alt="Sujeto 1" class="left-image">
+      </div>
+      <div class="column-right">
+        <p class="paragraph">Con la combinación del sensor IoT y el software de Inteligencia Artificial, un operador de máquinas se puede transformar en un mantenedor y evitar el costo de una avería. El sistema TRACTIAN aprende el patrón de funcionamiento de la máquina y ofrece todos los diagnósticos precisos, informes y prescripciones necesarios para acelerar la ejecución del plan de mantenimiento.
+        </p>
+        <div class="button-container">
+          <button class="btn-icon">
+            <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+              <rect x="15" y="8" width="2" height="10"/>
+              <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+              <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+
+            </svg>
+            
+            <span class="btn-text">Insights y diagnósticos</span>
+          </button>
+          <button class="btn-icon">
+            <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+              <rect x="15" y="8" width="2" height="10"/>
+              <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+              <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+
+            </svg>
+            
+            <span class="btn-text">Análisis de vibración</span>
+          </button>        
+        </div>
+        <div class="result-container">
+          <p class="ft18" ><strong>Resultados de</strong> Yara International</p>
+          <p class="ft24 ft600 " >Ahorro promedio de <span class="highlight">$200 mil</span> por falla</p>
+          <p class="ft24 ft600 " style="margin-top: 15px; margin-bottom: 30px;" ><span class="highlight">141</span> fallas prevenidas en <span class="highlight">1 año</span></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="tab-content" [class.active]="isTabActive('tab2')">
+    <div class="row">
+      <div class="column-left">
+        <!-- Contenido de la columna izquierda -->
+        <div class="quote-container">
+          <div class="quote">
+            <img class="img-quote"  [src]="icon.Comillas" style="height: 54px; color: blue"  alt="">
+            <p class="ft14 quote-info">Con TRACTIAN, optimizamos el funcionamiento, reducimos costos por fallas / defecto / error / averías imprevistas y tenemos más visibilidad sobre el funcionamiento de nuestras máquinas. Usamos en conjunto software y sensores, y gracias a esto hoy disponemos de una herramienta efectiva para gestionar activos críticos.</p>
+            <div class="quote-end">
+              <p class="ft15 quote-author" >Leandro Lage</p>
+            <p class=" ft15 quote-position">Coordinador de Mantenimiento
+            </p>
+            <p class=" quote-company">Embraer</p>
+
+            </div>
+            
+          </div>
+        </div>
+        <img [src]="icon.Sujeto2" alt="Sujeto 2" class="left-image">
+      </div>
+      <div class="column-right">
+        <p class="paragraph">Invierta en eficiencia energética ahora y asegure un ahorro en costos, reforzando el compromiso de su empresa con la sustentabilidad. El uso inteligente de los recursos energéticos es fundamental para la competitividad de la industria moderna.
+        </p>
+        <p class="paragraph"> Energy Trac monitorea su red eléctrica en tiempo real, recopilando datos sobre corriente, voltaje y consumo. Estos datos se transforman en ideas prescriptivas que identifican oportunidades para mejorar la eficiencia energética.
+        </p>
+        <p class="paragraph">Reduzca desperdicios y ahorre con Energy Trac.</p>
+        <div class="button-container">
+          <button class="btn-icon">
+            <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+              <rect x="15" y="8" width="2" height="10"/>
+              <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+              <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+
+            </svg>
+            
+            <span class="btn-text">Monitoreo de corriente</span>
+          </button>
+          <button class="btn-icon">
+            <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+              <rect x="15" y="8" width="2" height="10"/>
+              <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+              <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+
+            </svg>
+            
+            <span class="btn-text">Reportes de energía</span>
+          </button>        
+        </div>
+        <div class="result-container">
+          <p class="ft18" ><strong>Resultados de</strong> Yara International</p>
+          <p class="ft24 ft600 " >Ahorro promedio de <span class="highlight">$200 mil</span> por falla</p>
+          <p class="ft24 ft600 " style="margin-top: 15px; margin-bottom: 30px;" ><span class="highlight">141</span> fallas prevenidas en <span class="highlight">1 año</span></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" [class.active]="isTabActive('tab3')">
+    <div class="row">
+      <div class="column-left">
+        <!-- Contenido de la columna izquierda -->
+        <div class="quote-container">
+          <div class="quote">
+            <img class="img-quote"  [src]="icon.Comillas" style="height: 54px; color: blue"  alt="">
+            <p class="ft14 quote-info">Antes de TracOS™, un índice de paro del 50% en la fábrica era lo común. Ahora, desde que usamos TRACTIAN, nuestro índice máximo ronda el 5% (y seguimos bajando).</p>
+            <div class="quote-end">
+              <p class="ft15 quote-author" >Carlos Eduardo Paro</p>
+            <p class=" ft15 quote-position">Gerente de Ing. y Mantenimiento
+            </p>
+            <p class=" quote-company">Biofarm</p>
+
+            </div>
+            
+          </div>
+        </div>
+        <img [src]="icon.Sujeto3" alt="Sujeto 2" class="left-image">
+      </div>
+      <div class="column-right">
+        <p class="paragraph">TracOS™ es el software de gestión de máquinas, actividades y equipos más completo y adaptable para operaciones de todo tipo y tamaño. Diseñado para aportar agilidad y previsibilidad, puede integrarse con otros sistemas ERP tradicionales e incluye todas las herramientas necesarias para mantener activos y procesos bajo control.
+        </p>
+        <div class="button-container">
+          <button class="btn-icon">
+            <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+              <rect x="15" y="8" width="2" height="10"/>
+              <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+              <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+
+            </svg>
+            
+            <span class="btn-text">Monitoreo de corriente</span>
+          </button>
+          <button class="btn-icon">
+            <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+              <rect x="15" y="8" width="2" height="10"/>
+              <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+              <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+
+            </svg>
+            
+            <span class="btn-text">Reportes de energía</span>
+          </button>        
+        </div>
+        <div class="result-container">
+          <p class="ft18" ><strong>Resultados</strong> de Biofarm</p>
+          <p class=" ft24  "> <span class="highlight ft600">+$700 mil </span>  <span class="ft600 ">ahorrados</span> en 1 año  </p>
+          <p class=" ft24  " style="margin-top: 15px; margin-bottom: 30px;"> <span class="highlight ft600">38,5%  </span>  <span class="ft600 ">menos</span> de MTTR </p>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" [class.active]="isTabActive('tab4')">
+    <div class="row">
+      <div class="column-left">
+        <!-- Contenido de la columna izquierda -->
+        <div class="quote-container">
+          <div class="quote">
+            <img class="img-quote"  [src]="icon.Comillas" style="height: 54px; color: blue"  alt="">
+            <p class="ft14 quote-info">Constantemente, ampliamos el servicio para tener más equipos monitoreados. Después de todo, con más alertas tenemos mayores posibilidades de anticiparnos a problemas graves, con lo que conseguimos resultados aún mejores.
+            </p>
+            <div class="quote-end">
+              <p class="ft15 quote-author" >Pedro Pinho</p>
+            <p class=" ft15 quote-position">Especialista en Mantenimiento
+            </p>
+            <p class=" quote-company">Vibra Energia
+            </p>
+
+            </div>
+            
+          </div>
+        </div>
+        <img [src]="icon.Sujeto4" alt="Sujeto 2" class="left-image">
+      </div>
+      <div class="column-right">
+        <p class="paragraph">Independientemente del producto que usan, a los clientes de TRACTIAN les toma entre 2 y 4 meses en evitar la primera avería grave, con lo que ahorran mucho más de lo invertido. Cuantos más activos críticos supervise el sistema, más fallas importantes se identificarán a tiempo y mayor será el rendimiento financiero.
+        </p>
+        <div class="button-container">
+          <button class="btn-icon">
+            <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+              <rect x="15" y="8" width="2" height="10"/>
+              <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+              <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+
+            </svg>
+            
+            <span class="btn-text">Conoce más sobre nuestro ROI</span>
+          </button>
+          <button class="btn-icon">
+            <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+              <rect x="15" y="8" width="2" height="10"/>
+              <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+              <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+
+            </svg>
+            
+            <span class="btn-text">Descarga el caso completo</span>
+          </button>        
+        </div>
+        <div class="result-container">
+          <p class="ft18" ><strong>Resultados</strong> de Biofarm</p>
+          <p class=" ft24  "> <span class="highlight ft600">+$700 mil </span>  <span class="ft600 ">ahorrados</span> en 1 año  </p>
+          <p class=" ft24  " style="margin-top: 15px; margin-bottom: 30px;"> <span class="highlight ft600">38,5%  </span>  <span class="ft600 ">menos</span> de MTTR </p>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
 </section>

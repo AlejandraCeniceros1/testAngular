@@ -151,6 +151,7 @@
 .shadow50{ box-shadow: var(--shadow50) !important;}
 
 
+.ft100{ font-weight: 100!important;}
 
 .ft300{  font-weight: 300!important;
     font-family: "Gordita-light", "Helvetica Neue", sans-serif; }
@@ -247,3 +248,9 @@
     padding: 10px;
   }
   
+
+  .grayLine {
+    background-color: var(--gray-8);
+    min-height: 1px;
+    width: 95%;
+  }

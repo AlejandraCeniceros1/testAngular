@@ -17,6 +17,13 @@ export class IconService {
     Menu: string ="assets/icons/menu.svg"
     File: string ="assets/icons/result.svg"
     Tractian: string ="assets/img/tractian-logo.png"
+    Sujeto1: string ="assets/img/yara.avif"
+    Sujeto2: string="assets/img/Sujeto2.avif"
+    Sujeto3: string="assets/img/biofarm.png"
+    Sujeto4: string="assets/img/Sujeto4.avif"
+    Comillas: string="assets/icons/quotes.svg"
+    WarningAnim: string="src/assets/icons/warning2.svg"
+
 
 
 
