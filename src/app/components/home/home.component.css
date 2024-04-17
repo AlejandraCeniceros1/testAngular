@@ -226,6 +226,8 @@
   display: none;
   padding: 20px;
   border-top: none;
+  padding-bottom: 70px;
+  
 }
 
 .tab-content.active {
@@ -239,14 +241,6 @@
   display: flex;
 }
 
-
-
-.column-right {
-  flex: 1;
-  padding: 5px;
-  margin-left: 170px;
-  margin-right: 50px;
-}
 
 .quote-container {
   position: absolute;
@@ -267,10 +261,7 @@
   margin-top: 40px;
 }
 
-.column-left {
-  position: relative;
-  width: 560px;
-}
+
 
 
 .quote  {

@@ -1,0 +1,200 @@
+<section class="case-study" [hidden]="currentIndex !== 0" >
+    <div class="rowCase">
+        <div class="column-left">
+            <div class="cases-container">
+                <div class="chip-1"> </div> 
+                <p class="case-title">La mayor productora de papel y celulosa del mundo</p>
+                <div class="overlay"></div> 
+                <img [src]="icon.Case1" class="img-case" alt="">
+            </div>
+        </div>
+        <div class="info-cases">
+            <p class="case-name">Monitoreo de máquinas</p>
+            <div class="controls-container">
+                <button class="prev-slide" (click)="prevSlide()">&#10094;</button>
+                <button class="next-slide" (click)="nextSlide()">&#10095;</button>
+            </div>
+            <div class="tag-container">
+                <div class="tag-icon">
+                    <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
+                    <span class="tag-2">Análisis de vibración</span>
+                </div>
+                <div class="tag-icon">
+                    <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
+                    <span class="tag-2">Análisis de cosas</span>
+                </div>
+            </div>
+            <div class="cases-results">
+                <div class="result-container" *ngIf="currentIndex === 0">
+                    <span>$56M</span>
+                    <p>ahorrados gracias a la detección oportuna de posibles fallos, junto con el mantenimiento predictivo por parte del equipo basado en la prescripción de la IA.</p>
+                </div>
+                <div class="result-container" *ngIf="currentIndex === 1">
+                    <span>3 meses</span>
+                    <p>es el tiempo que necesita el sistema para superar la inversión que se le destina.</p>
+                </div>
+            </div>
+            <div class="integracion">
+                <p >Integración de múltiples productos</p>
+                <div class="integracion-cases">
+                    <div class="integracion-container">
+                        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+                            <rect x="15" y="8" width="2" height="10"/>
+                            <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+                            <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+                        </svg>
+                        <p>Salud del activo</p>
+                    </div>
+                    <div class="integracion-container">
+                        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+                            <rect x="15" y="8" width="2" height="10"/>
+                            <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+                            <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+                        </svg>
+                        <p>Salud del activo</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+    </div>
+    
+    
+</section>
+
+<section class="case-study" [hidden]="currentIndex !== 1" >
+    <div class="rowCase">
+        <div class="column-left">
+            <div class="cases-container">
+                <div class="chip-1"> </div> 
+                <p class="case-title">La mayor productora de papel y celulosa del mundo</p>
+                <div class="overlay"></div> 
+                <img [src]="icon.Case2" class="img-case" alt="">
+            </div>
+        </div>
+        <div class="info-cases">
+            <p class="case-name">Monitoreo de máquinas</p>
+            <div class="controls-container">
+                <button class="prev-slide" (click)="prevSlide()">&#10094;</button>
+                <button class="next-slide" (click)="nextSlide()">&#10095;</button>
+            </div>
+            <div class="tag-container">
+                <div class="tag-icon">
+                    <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
+                    <span class="tag-2">Análisis de vibración</span>
+                </div>
+                <div class="tag-icon">
+                    <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
+                    <span class="tag-2">Análisis de cosas</span>
+                </div>
+            </div>
+            <div class="cases-results">
+                <div class="result-container" *ngIf="currentIndex === 0">
+                    <span>$56M</span>
+                    <p>ahorrados gracias a la detección oportuna de posibles fallos, junto con el mantenimiento predictivo por parte del equipo basado en la prescripción de la IA.</p>
+                </div>
+                <div class="result-container" *ngIf="currentIndex === 1">
+                    <span>3 meses</span>
+                    <p>es el tiempo que necesita el sistema para superar la inversión que se le destina.</p>
+                </div>
+            </div>
+            <div class="integracion">
+                <p >Integración de múltiples productos</p>
+                <div class="integracion-cases">
+                    <div class="integracion-container">
+                        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+                            <rect x="15" y="8" width="2" height="10"/>
+                            <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+                            <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+                        </svg>
+                        <p>Salud del activo</p>
+                    </div>
+                    <div class="integracion-container">
+                        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+                            <rect x="15" y="8" width="2" height="10"/>
+                            <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+                            <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+                        </svg>
+                        <p>Salud del activo</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+    </div>
+    
+    
+</section>
+
+<section class="case-study" [hidden]="currentIndex !== 2" >
+    <div class="rowCase">
+        <div class="column-left">
+            <div class="cases-container">
+                <div class="chip-1"> </div> 
+                <p class="case-title">La mayor productora de papel y celulosa del mundo</p>
+                <div class="overlay"></div> 
+                <img [src]="icon.Case3" class="img-case" alt="">
+            </div>
+        </div>
+        <div class="info-cases">
+            <p class="case-name">Monitoreo de máquinas</p>
+            <div class="controls-container">
+                <button class="prev-slide" (click)="prevSlide()">&#10094;</button>
+                <button class="next-slide" (click)="nextSlide()">&#10095;</button>
+            </div>
+            <div class="tag-container">
+                <div class="tag-icon">
+                    <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
+                    <span class="tag-2">Fallas mecánicas</span>
+                </div>
+                <div class="tag-icon">
+                    <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
+                    <span class="tag-2">Mantenimiento preventivo basado en Horímetro</span>
+                </div>
+            </div>
+            <div class="cases-results">
+                <div class="result-container" *ngIf="currentIndex === 0">
+                    <span>$56M</span>
+                    <p>ahorrados gracias a la detección oportuna de posibles fallos, junto con el mantenimiento predictivo por parte del equipo basado en la prescripción de la IA.</p>
+                </div>
+                <div class="result-container" *ngIf="currentIndex === 1">
+                    <span>3 meses</span>
+                    <p>es el tiempo que necesita el sistema para superar la inversión que se le destina.</p>
+                </div>
+            </div>
+            <div class="integracion">
+                <p >Integración de múltiples productos</p>
+                <div class="integracion-cases">
+                    <div class="integracion-container">
+                        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+                            <rect x="15" y="8" width="2" height="10"/>
+                            <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+                            <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+                        </svg>
+                        <p>Salud del activo</p>
+                    </div>
+                    <div class="integracion-container">
+                        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path d="M16,21a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,21Z"/>
+                            <rect x="15" y="8" width="2" height="10"/>
+                            <path d="M23,29H9a1,1,0,0,1-.8638-.4961l-7-12a1,1,0,0,1,0-1.0078l7-12A1,1,0,0,1,9,3H23a1,1,0,0,1,.8638.4961l7,12a1,1,0,0,1,0,1.0078l-7,12A1,1,0,0,1,23,29ZM9.5742,27H22.4258l6.4165-11L22.4258,5H9.5742L3.1577,16Z"/>
+                            <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+                        </svg>
+                        <p>Salud del activo</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+    </div>
+    
+    
+</section>

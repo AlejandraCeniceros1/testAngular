@@ -1,16 +1,31 @@
 import { Component, ElementRef, ViewChild} from '@angular/core';
-import { IconService } from '../services/icon.service';
+import { IconService } from '../../services/icon.service';
+import { CarouselComponent } from '../carousel/carousel.component';
+import { CasestudyComponent } from '../casestudy/casestudy.component';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [
+    CarouselComponent,
+    CasestudyComponent,
+  ],
   providers: [IconService],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
+  images = [
+    '/assets/img/air-liquide-logo.avif',
+    '/assets/img/arcelormittal-logo.avif',
+    '/assets/img/danone-logo.avif',
+    'src/assets/img/embraer-logo.avif',
+    'src/assets/img/frisa-logo.avif',
+    'src/assets/img/grupo-bimbo-logo.avif',
+    'src/assets/img/karcher-logo.avif',
+    'src/assets/img/la-costena-logo.avif',
+  ]
   activeTab: string = 'tab1';
   tabWidth: string = '20%'; 
   linePosition: string = '15%'; 

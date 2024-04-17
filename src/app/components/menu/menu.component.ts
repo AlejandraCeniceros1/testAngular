@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { IconService } from '../services/icon.service';
+import { IconService } from '../../services/icon.service';
 import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
 
 @Component({

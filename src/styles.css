@@ -254,3 +254,17 @@
     min-height: 1px;
     width: 95%;
   }
+
+  .column-left {
+    position: relative;
+    width: 560px;
+  }
+
+  
+.column-right {
+  flex: 1;
+  padding: 5px;
+  margin-left: 170px;
+  margin-right: 50px;
+}
+

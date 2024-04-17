@@ -1,0 +1,7 @@
+<div class="carousel-container">
+    <div class="slide" *ngFor="let image of images; let i = index" [class.active]="i === currentIndex">
+      <img [src]="image" alt="Slide {{i+1}}"> 
+    </div>
+    aqui va el carousel
+  </div>
+  

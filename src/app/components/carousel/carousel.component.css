@@ -1,0 +1,19 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    /* display: none; */
+    width: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  

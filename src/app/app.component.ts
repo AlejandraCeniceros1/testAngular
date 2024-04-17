@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { MenuComponent } from './menu/menu.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { IconService } from './services/icon.service';
+
 
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 
@@ -10,7 +12,14 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FormsModule, MenuComponent,
+  imports: [
+    CommonModule,
+    RouterOutlet, 
+    FormsModule, 
+    MenuComponent,
+  ],
+  providers: [
+    IconService,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

@@ -118,6 +118,7 @@
 <section class="info-section2">
   <p class="ft14 paragraph " style="color: rgb(82, 82, 82); font-weight: 100;"> ¹, ², ³. De acuerdo con los entrevistados en un estudio comisionado por Atlas Intel en Julio de 2023.</p>
   <div class="down-line"> </div>
+  <app-carousel [images]="images"> </app-carousel>
   
 </section>
 <section class="section-tabs" >
@@ -132,18 +133,15 @@
   <div class="tab-content" [class.active]="activeTab === 'tab1'">
     <div class="row">
       <div class="column-left">
-        <!-- Contenido de la columna izquierda -->
         <div class="quote-container">
           <div class="quote">
-            <img class="img-quote"  [src]="icon.Comillas" style="height: 54px; color: blue"  alt="">
+            <img class="img-quote"  [src]="icon.Comillas" style="height: 54px;"  alt="">
             <p class="ft14 quote-info">Sin un monitoreo continuo, estamos en riesgo de perder información crucial sobre nuestra operación. Afortunadamente, TRACTIAN registra estos datos para nosotros, por lo que ahora tenemos una herramienta en la que podemos confiar.</p>
             <div class="quote-end">
               <p class="ft15 quote-author" >Gustavo Nazar</p>
             <p class=" ft15 quote-position">Analista de Mantenimiento</p>
             <p class=" quote-company">Yara International</p>
-
             </div>
-            
           </div>
         </div>
         <img [src]="icon.Sujeto1" alt="Sujeto 1" class="left-image">
@@ -239,7 +237,8 @@
         <div class="result-container">
           <p class="ft18" ><strong>Resultados de</strong> Yara International</p>
           <p class="ft24 ft600 " >Ahorro promedio de <span class="highlight">$200 mil</span> por falla</p>
-          <p class="ft24 ft600 " style="margin-top: 15px; margin-bottom: 30px;" ><span class="highlight">141</span> fallas prevenidas en <span class="highlight">1 año</span></p>
+          <p class=" ft24  " style="margin-top: 15px; margin-bottom: 30px;"> <span class="highlight ft600">141 fallas </span>  <span class="ft600 "> prevenidas en </span> 1 año </p>
+
         </div>
         
       </div>
@@ -352,16 +351,14 @@
           </button>        
         </div>
         <div class="result-container">
-          <p class="ft18" ><strong>Resultados</strong> de Biofarm</p>
-          <p class=" ft24  "> <span class="highlight ft600">+$700 mil </span>  <span class="ft600 ">ahorrados</span> en 1 año  </p>
-          <p class=" ft24  " style="margin-top: 15px; margin-bottom: 30px;"> <span class="highlight ft600">38,5%  </span>  <span class="ft600 ">menos</span> de MTTR </p>
+          <p class="ft18" ><strong>Resultados</strong> de Vida Energía</p>
+          <p class=" ft24  "> <span class="highlight ft600">+$700 mil </span>  <span class="ft600 ">recolecciones </span> de datos  </p>
+          <p class=" ft24  " style="margin-top: 15px; margin-bottom: 30px;"> <span class="highlight ft600">1300% </span>  <span class="ft600 ">de ROI </span>en 9 meses </p>
 
         </div>
         
       </div>
     </div>
   </div>
-
-
-
 </section>
+<app-casestudy  ></app-casestudy>

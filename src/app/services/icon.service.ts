@@ -23,8 +23,12 @@ export class IconService {
     Sujeto4: string="assets/img/Sujeto4.avif"
     Comillas: string="assets/icons/quotes.svg"
     WarningAnim: string="src/assets/icons/warning2.svg"
+    Case1: string = "/assets/img/mmm.avif"
+    Case2: string = "/assets/img/case2.avif"
+    Case3: string = "/assets/img/case3.avif"
+    Stat2: string = "/assets/icons/iconstat.svg"
 
-
+ 
 
 
 
