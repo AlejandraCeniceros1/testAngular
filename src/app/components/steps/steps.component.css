@@ -1,0 +1,51 @@
+.steps{
+    height: 500px;
+    background-color: #DBE9FE;
+}
+
+.title-steps{
+
+    justify-content: center;
+    align-items: center;
+}
+
+.title-steps span{
+    justify-content: center;
+    font-size: 24px;
+
+}
+
+.title-column h1 {
+    padding-top: 50px;
+
+    font-size: 2.8rem;
+    font-weight: 550;
+    font-family: 'Nexa Text', sans-serif;    
+    margin-bottom: 1px;
+    color: #323c5a;
+}
+
+.steps-img-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    width: 100%!important;
+    gap: 2px;
+    
+}
+.relative{
+    position: relative;
+}
+.steps-img{
+    background-color: #1753ad;
+    object-fit: cover;
+    max-height: 220px!important;
+}
+.contenedorimg{
+    display: flex;
+
+    top:0;
+    left:0;
+    bottom:0;
+    right:0
+}

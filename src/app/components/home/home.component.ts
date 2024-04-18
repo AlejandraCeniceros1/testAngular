@@ -2,6 +2,7 @@ import { Component, ElementRef, ViewChild} from '@angular/core';
 import { IconService } from '../../services/icon.service';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { CasestudyComponent } from '../casestudy/casestudy.component';
+import { StepsComponent } from '../steps/steps.component';
 
 
 @Component({
@@ -10,6 +11,7 @@ import { CasestudyComponent } from '../casestudy/casestudy.component';
   imports: [
     CarouselComponent,
     CasestudyComponent,
+    StepsComponent,
   ],
   providers: [IconService],
   templateUrl: './home.component.html',

@@ -2,7 +2,7 @@
     <div class="rowCase">
         <div class="column-left">
             <div class="cases-container">
-                <div class="chip-1"> </div> 
+                <p class="chip-1"> CASE STUDY </p> 
                 <p class="case-title">La mayor productora de papel y celulosa del mundo</p>
                 <div class="overlay"></div> 
                 <img [src]="icon.Case1" class="img-case" alt="">
@@ -17,22 +17,25 @@
             <div class="tag-container">
                 <div class="tag-icon">
                     <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
-                    <span class="tag-2">Análisis de vibración</span>
+                    <span class="tag-2">Prescripción de fallas</span>
                 </div>
                 <div class="tag-icon">
                     <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
-                    <span class="tag-2">Análisis de cosas</span>
+                    <span class="tag-2">Alertas sobre tendencias de temperatura</span>
                 </div>
             </div>
             <div class="cases-results">
-                <div class="result-container" *ngIf="currentIndex === 0">
+                <div class="result-container" >
                     <span>$56M</span>
                     <p>ahorrados gracias a la detección oportuna de posibles fallos, junto con el mantenimiento predictivo por parte del equipo basado en la prescripción de la IA.</p>
                 </div>
-                <div class="result-container" *ngIf="currentIndex === 1">
+                <div class="result-container">
                     <span>3 meses</span>
                     <p>es el tiempo que necesita el sistema para superar la inversión que se le destina.</p>
                 </div>
+            </div>
+            <div class="" > 
+
             </div>
             <div class="integracion">
                 <p >Integración de múltiples productos</p>
@@ -64,13 +67,12 @@
     
     
 </section>
-
 <section class="case-study" [hidden]="currentIndex !== 1" >
     <div class="rowCase">
         <div class="column-left">
             <div class="cases-container">
-                <div class="chip-1"> </div> 
-                <p class="case-title">La mayor productora de papel y celulosa del mundo</p>
+                <p class="chip-1"> CASE STUDY </p> 
+                <p class="case-title">El productor más grande de aluminio en Latinoamérica</p>
                 <div class="overlay"></div> 
                 <img [src]="icon.Case2" class="img-case" alt="">
             </div>
@@ -84,22 +86,26 @@
             <div class="tag-container">
                 <div class="tag-icon">
                     <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
-                    <span class="tag-2">Análisis de vibración</span>
+                    <span class="tag-2">Fallas Mecánicas</span>
                 </div>
                 <div class="tag-icon">
                     <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
-                    <span class="tag-2">Análisis de cosas</span>
+                    <span class="tag-2">Mantenimiento preventivo basado en Horímetro</span>
                 </div>
             </div>
             <div class="cases-results">
-                <div class="result-container" *ngIf="currentIndex === 0">
-                    <span>$56M</span>
-                    <p>ahorrados gracias a la detección oportuna de posibles fallos, junto con el mantenimiento predictivo por parte del equipo basado en la prescripción de la IA.</p>
+                <div class="result-container" >
+                    <span>480% </span>
+                    <p>fue el retorno de la inversión (ROI) comunicado por el cliente, que optó por la supervisión de vibraciones y energía.
+                    </p>
                 </div>
-                <div class="result-container" *ngIf="currentIndex === 1">
-                    <span>3 meses</span>
-                    <p>es el tiempo que necesita el sistema para superar la inversión que se le destina.</p>
+                <div class="result-container">
+                    <span>6 meses</span>
+                    <p>fue el tiempo que tardó el proyecto en ahorrar más que el importe de la inversión.</p>
                 </div>
+            </div>
+            <div class="" > 
+
             </div>
             <div class="integracion">
                 <p >Integración de múltiples productos</p>
@@ -131,12 +137,11 @@
     
     
 </section>
-
 <section class="case-study" [hidden]="currentIndex !== 2" >
     <div class="rowCase">
         <div class="column-left">
             <div class="cases-container">
-                <div class="chip-1"> </div> 
+                <p class="chip-1"> CASE STUDY </p> 
                 <p class="case-title">La mayor productora de papel y celulosa del mundo</p>
                 <div class="overlay"></div> 
                 <img [src]="icon.Case3" class="img-case" alt="">
@@ -151,22 +156,33 @@
             <div class="tag-container">
                 <div class="tag-icon">
                     <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
-                    <span class="tag-2">Fallas mecánicas</span>
+                    <span class="tag-2">Planes y calendarios</span>
                 </div>
                 <div class="tag-icon">
                     <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
-                    <span class="tag-2">Mantenimiento preventivo basado en Horímetro</span>
+                    <span class="tag-2">Procedimentos únicos</span>
+                </div>
+                <div class="tag-icon">
+                    <img id="icon" [src]="icon.Stat2"  alt="" style="height: 24px;">
+                    <span class="tag-2">Eficiencia energética</span>
                 </div>
             </div>
             <div class="cases-results">
-                <div class="result-container" *ngIf="currentIndex === 0">
-                    <span>$56M</span>
-                    <p>ahorrados gracias a la detección oportuna de posibles fallos, junto con el mantenimiento predictivo por parte del equipo basado en la prescripción de la IA.</p>
+                <div class="result-container" >
+                    <span>$1M</span>
+                    <p>en ahorro gracias a a la optimización de activos y rutinas de mantenimiento.</p>
                 </div>
-                <div class="result-container" *ngIf="currentIndex === 1">
-                    <span>3 meses</span>
-                    <p>es el tiempo que necesita el sistema para superar la inversión que se le destina.</p>
+                <div class="result-container">
+                    <span>30%</span>
+                    <p>menos de consumo energético gracias a los sensores.</p>
                 </div>
+                <div class="result-container">
+                    <span>8 meses</span>
+                    <p>pasaron entre la imlementación y la amortización de la inversión.</p>
+                </div>
+            </div>
+            <div class="" > 
+
             </div>
             <div class="integracion">
                 <p >Integración de múltiples productos</p>
@@ -198,3 +214,4 @@
     
     
 </section>
+

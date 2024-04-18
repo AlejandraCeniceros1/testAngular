@@ -136,9 +136,6 @@
   object-fit: cover; 
 }
 
-.title-column {
-  text-align: center; 
-}
 
 .custom-cards {
   display: flex;
